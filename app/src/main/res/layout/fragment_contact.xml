@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <FrameLayout tools:context=".ContactFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView android:layout_height="match_parent" android:layout_width="match_parent" android:textSize="30dp" android:text="Contact Us:"/>
+
+    <TextView android:layout_height="match_parent" android:layout_width="match_parent" android:textSize="30dp" android:text="Email: petlocket@gmail.com" android:layout_marginTop="70dp"/>
+
+    <TextView android:layout_height="match_parent" android:layout_width="match_parent" android:textSize="30dp" android:text="Phone: 01234567890" android:layout_marginTop="150dp"/>
+
+</FrameLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C9CF"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3cb371"
+        android:id="@+id/bar"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3cb371"
+            android:id="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_search_white_24dp"
+                   android:id="@+id/img"
+                   android:layout_marginTop="15dp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search"
+                    android:hint="Search..."
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:maxLines="1"
+                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_filter_list_white_24dp"-->
+<!--                    android:id="@+id/filter"-->
+<!--                    android:layout_margin="12dp"-->
+<!--                    />-->
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/bar"
+        android:id="@+id/tags"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cgservicee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            >
+
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/chipSell"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Sell"-->
+<!--                style="@style/ChipCustom"-->
+<!--                app:closeIcon="@drawable/ic_close_grey"-->
+<!--                />-->
+
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/chipMate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Mate"-->
+<!--                style="@style/ChipCustom"-->
+<!--                app:closeIcon="@drawable/ic_close_grey"                />-->
+
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/chipAdopt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Adopt"-->
+<!--                style="@style/ChipCustom"-->
+<!--                app:closeIcon="@drawable/ic_close_grey"-->
+<!--                />-->
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/chipMale"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Male"-->
+<!--                style="@style/ChipCustom"-->
+<!--                app:closeIcon="@drawable/ic_close_grey"-->
+<!--                />-->
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/chipFemale"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Female"-->
+<!--                style="@style/ChipCustom"-->
+<!--                app:closeIcon="@drawable/ic_close_grey"-->
+<!--                />-->
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:chipIcon="@drawable/ic_add_grey_24dp"
+        app:closeIconEnabled="false"
+        app:closeIconVisible="false"
+        style="@style/ChipCustom"
+        android:text="Add filter"
+        android:layout_below="@id/tags"
+        android:layout_marginBottom="5dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/chipAdd"
+
+        />
+</RelativeLayout>

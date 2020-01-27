@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PetLocket</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Type">Type</string>
+
+    <string-array name="types">
+        <item>Service</item>
+        <item>Sex</item>
+        <item>minAge</item>
+        <item>maxAge</item>
+        <item>minPrice</item>
+        <item>maxPrice</item>
+        <item>Breed</item>
+
+    </string-array>
+
+    <string-array name="services">
+        <item>Adopt</item>
+        <item>Mate</item>
+        <item>Sell</item>
+
+
+    </string-array>
+</resources>

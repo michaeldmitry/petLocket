@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Contact Us" android:id="@+id/contact_us"/>
+
+    <item android:title="Send Report" android:id="@+id/send_report"/>
+
+    <item android:title="Saved Posts" android:id="@+id/saved_posts"/>
+
+    <item android:title="Saved Pets" android:id="@+id/saved_pets"/>
+
+
+    <item android:title="Logout" android:id="@+id/logout"/>
+
+</menu>
